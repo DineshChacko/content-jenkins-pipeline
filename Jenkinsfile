@@ -10,6 +10,7 @@ pipeline { agent any
         	stage('run') {
                		 steps {
                        		 sh 'java -jar rectangle.jar 7 9'
+				 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 	}
         	}
 	}
