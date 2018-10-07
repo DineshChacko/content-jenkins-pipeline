@@ -8,7 +8,7 @@ pipeline { agent any
 			} 
 		}
 	}
-        stage('run' {
+        stage('run') {
         	steps {
 			sh 'java -jar rectangle.jar 7 9'
  		}
